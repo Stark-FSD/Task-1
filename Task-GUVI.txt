@@ -1,0 +1,29 @@
+1. Write a blog on Difference between HTTP1.1 vs HTTP2
+2. Write a blog about objects and its internal representation in JavaScript
+
+--------------------------------------------------------------------------	
+
+1st Answer: 
+
+HTTP/1.1
+* It works on the textual format.
+* There is head of line blocking that blocks all the requests behind it until it doesn't get its all resources.
+* It uses requests resource Inlining for use getting multiple pages
+* loads resources one after the other, so if one resource cannot be loaded, it blocks all the other resources behind it.
+
+HTTP/2
+* It works on the binary protocol.
+* It allows multiplexing so one TCP connection is required for multiple requests.
+* It uses PUSH frame by server that collects all multiple pages 
+* It is able to use a single TCP connection to send multiple streams of data at once so that no one resource blocks any other resource.
+
+
+2nd Answer:
+
+Objects, in JavaScript, is its most important data-type and forms the building blocks for modern JavaScript. These objects are quite different from JavaScript's primitive data-types (Number, String, Boolean, null, undefined and symbol) in the sense that while these primitive data-types all store a single value each (depending on their types).
+
+Objects are more complex and each object may contain any combination of these primitive data-types as well as reference data-types.
+An object, is a reference data type. Variables that are assigned a reference value are given a reference or a pointer to that value. That reference or pointer points to the location in memory where the object is stored. The variables don't actually store the value.
+
+
+
